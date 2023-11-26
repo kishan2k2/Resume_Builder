@@ -1,1 +1,65 @@
-<h1>HI</h1>
+ <div className='main'>
+  
+
+
+
+<div className='ac'>
+<h1 className='ab'>Resume Form </h1>
+  <form onSubmit={submitHandler}>
+          <label>
+            <p>First Name <sup>*</sup></p> 
+
+            <input
+            type="text"
+            required
+            value={formData.firstName}
+            name='firstName'
+            onChange={handler}
+            placeholder='Aman'
+            />
+          </label>
+          <br></br>
+          <label>
+            <p>Last Name</p> 
+
+            <input
+             type="text"
+             onChange={handler}   
+           placeholder='Thapliyal'
+            value={formData.lastName}
+            name='lastName'
+            />
+          </label>
+          <br></br>
+          <label>
+            <p>Email Id<sup>*</sup></p> 
+
+            <input
+            type="text"
+            required
+            value={formData.email}
+            name='email'
+            onChange={handler}
+            placeholder="amanthapliyal2002@gmail.com"
+            />
+          </label>
+          <br></br>
+          <label>
+            <p>Mobile No.<sup>*</sup></p> 
+
+            <input
+            type="Number"
+            required
+            value={formData.mobileNumber}
+            name='mobileNumber'
+            onChange={handler}
+          placeholder='1234567890'
+            />
+          </label> <br></br>
+          <button>Submit</button>
+
+  </form>
+</div>
+
+</div>
+  
