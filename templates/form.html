@@ -5,7 +5,7 @@
 
 <div className='ac'>
 <h1 className='ab'>Resume Form </h1>
-  <form onSubmit={submitHandler}>
+  <form action="{{ url_for('CreateResume')}}">
           <label>
             <p>First Name <sup>*</sup></p> 
 
@@ -13,7 +13,7 @@
             type="text"
             required
             value={formData.firstName}
-            name='firstName'
+            name='name'
             onChange={handler}
             placeholder='Aman'
             />

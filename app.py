@@ -1,6 +1,4 @@
-from flask import Flask, render_template
-import requests
-
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Routes
@@ -9,10 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template('form.html')
 
-@app.route("/resume", methods=["POST"])
+@app.route("/resume", methods=["GET", "POST"])
 def CreateResume():
-    name = requests.form['name']
-    return render_template('form.html', name = name)
+    name = request.form
+    return render_template('resume.html', name = name)
 
 # Execution of main code
 
