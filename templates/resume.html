@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Thank you for submitting your information!</h1>
-    <p>Name: {{ name }}</p>
-    <p>Email: {{ email }}</p>
+    <h1>Resume</h1>
+    <section>
+        <label>Name:</label>
+        <p>{{ name }}</p>
+    </section>
+    <section>
+        <label>Email:</label>
+        <p>{{ email }}</p>
+    </section>
+    <section>
+        <label>Education:</label>
+        <p>{{ education }}</p>
+    </section>
+    <section>
+        <label>Experience:</label>
+        <p>{{ experience }}</p>
+    </section>
+    <!-- Add additional sections for other information -->
+    <!-- Example: -->
+    <!--
+    <section>
+        <label>Skills:</label>
+        <p>{{ skills }}</p>
+    </section>
+    <section>
+        <label>Projects:</label>
+        <p>{{ projects }}</p>
+    </section>
+    -->
     <p><a href="/">Go back to the form</a></p>
 </body>
 </html>
