@@ -1,65 +1,20 @@
- <div className='main'>
-  
-
-
-
-<div className='ac'>
-<h1 className='ab'>Resume Form </h1>
-  <form action="{{ url_for('CreateResume')}}">
-          <label>
-            <p>First Name <sup>*</sup></p> 
-
-            <input
-            type="text"
-            required
-            value={formData.firstName}
-            name='name'
-            onChange={handler}
-            placeholder='Aman'
-            />
-          </label>
-          <br></br>
-          <label>
-            <p>Last Name</p> 
-
-            <input
-             type="text"
-             onChange={handler}   
-           placeholder='Thapliyal'
-            value={formData.lastName}
-            name='lastName'
-            />
-          </label>
-          <br></br>
-          <label>
-            <p>Email Id<sup>*</sup></p> 
-
-            <input
-            type="text"
-            required
-            value={formData.email}
-            name='email'
-            onChange={handler}
-            placeholder="amanthapliyal2002@gmail.com"
-            />
-          </label>
-          <br></br>
-          <label>
-            <p>Mobile No.<sup>*</sup></p> 
-
-            <input
-            type="Number"
-            required
-            value={formData.mobileNumber}
-            name='mobileNumber'
-            onChange={handler}
-          placeholder='1234567890'
-            />
-          </label> <br></br>
-          <button>Submit</button>
-
-  </form>
-</div>
-
-</div>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Enter your information</h1>
+    <form action="/result" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
